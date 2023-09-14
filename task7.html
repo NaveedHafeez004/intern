@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            color: blue;
+            text-align: center;
+        }
+        table,td{
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align: center;
+            font-weight: bold;
+        }
+        td{
+            width: 350px;
+            text-align: left;
+        }
+        .a{
+          width: 700px;
+        }
+        hr{
+            color: 1px solid black;
+        }
+        .b{
+            height: 100px;
+        }
+        input{
+            border: none;
+            margin-left: 0px;
+        }
+        .not-bold{
+            font-weight: normal;
+        }
+        .right{
+            text-align: right;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: small;
+        }
+    </style>
+</head>
+<body>
+    <form action="backend.php">
+    <h1>Registration form</h1>
+    <table>
+        <tr>
+        <td >
+            First Name
+        </td>
+        <td class="a">
+            <input type="text">
+        </td>
+    </tr>
+        <tr>
+            <td>
+                Last Name
+            </td>
+            <td class="a">
+                <input type="text">
+            </td>
+        </tr>
+    <tr>
+        <td>
+            Email
+        </td>
+        <td class="a">
+            <input type="email" name="" id="">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Password
+        </td>
+        <td class="a">
+            <input type="password">
+        </td>
+    </tr>
+    <tr>
+        <td>
+        Re-enter Password
+    </td>
+    <td class="a">
+        <input type="password">
+    </td>
+    </tr>
+    <tr>
+        <td>
+            Gender
+        </td>
+        <td>
+            <table>
+             <div><tr><input type="radio" name="myg">Male</tr><hr></tr><input type="radio" name="myg">Female</div>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>
+        Age:
+    </td>
+    <td>
+        <input type="number">
+    </td>
+    </tr>
+    <tr>
+        <td>
+            Phone Number:
+        </td>
+        <td>
+            <input type="number">
+        </td>
+        <tr>
+        <td class="b">
+            Address
+        </td>
+        <td>
+            <input type="text">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            State
+        </td>
+        <td>
+            <input type="text">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Country:
+        </td>
+        <td class="h">
+            <label for="Country"></label>
+            <select name="Country" id="count">
+              <option value="Choose your Country">Choose your Country</option>
+              <option value="India">India</option>
+              <option value="USA">USA</option>
+
+        </td>
+        <tr>
+            <td>
+                Languages known
+            </td>
+            <td>
+                <input type="radio" name="Eng">English
+                <input type="radio" name="kan">Kannada
+                <input type="radio" name="hin">Hindi
+                <input type="radio" name="tel">Telugu
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2"> 
+                <input type="checkbox" name="myh">
+                <span class="not-bold">Hereby I declare all the details are true</span>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" class="right">
+                Log in to <a href="#">Ethnus</a> Website
+            </td>
+        </tr>
+        </form>
+    </table>
+</body>
+</html>
